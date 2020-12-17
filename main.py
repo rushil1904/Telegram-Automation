@@ -1,5 +1,6 @@
 import os
 import random
+import time
 from keep_alive import keep_alive
 try:
     from telethon.sync import TelegramClient
@@ -23,6 +24,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -43,6 +45,7 @@ async def my_event_handler(event):
     message = event.message.message
     dictb = {'sun' : 'bol', 'oye': 'bol','aur bta' : 'wahi same bhai. tu bta'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -60,6 +63,7 @@ async def my_event_handler(event):
     message = event.message.message
     dictb = {'sun' : 'bol', 'oye': 'bol', 'kya kar raha hai': 'kuch nahi. bata'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -76,7 +80,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'tu bta', 'oye': 'bol','aur bta' : 'wahi same bhai. tu bta'}
-    
+    time.sleep(5)
     for x in list_bhati:
         if x == event.text.lower():
             await event.reply('Bhati always OP!')
@@ -95,6 +99,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -115,6 +120,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -135,6 +141,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -155,6 +162,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -175,6 +183,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
@@ -195,6 +204,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != 494234334:
+        time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
