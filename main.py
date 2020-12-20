@@ -1,7 +1,7 @@
 import os
 import random
 import time
-from keep_alive import keep_alive
+from keep_alive import keep_alive       #To keep the bot running 24*7
 try:
     from telethon.sync import TelegramClient
     from telethon import TelegramClient,events,sync
@@ -12,7 +12,7 @@ except:
     from telethon import TelegramClient,events,sync
     from telethon import functions,types
 
-list_bhati = ['bhati op']
+list_bhati = ['bhati op', 'machaya bhati']
 greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya']
 api_id = os.getenv('API_ID')
 api_hash = os.getenv('API_HASH')
@@ -25,7 +25,7 @@ async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
     if event.message.from_id.user_id != id:
-        time.sleep(5)
+        time.sleep(5)               #Delays response time of bot to make conversations more natural
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
