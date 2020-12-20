@@ -13,17 +13,17 @@ except:
     from telethon import functions,types
 
 list_bhati = ['bhati op', 'machaya bhati']
-greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya']
-api_id = os.getenv('API_ID')
-api_hash = os.getenv('API_HASH')
-id = os.getenv('id')
+greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya']      #Create a list of greeting messages you usually receive and wish to send to others as greetings
+api_id = os.getenv('API_ID')    #Enter your Telegram app API ID
+api_hash = os.getenv('API_HASH')  # Enter the created API Hash 
+id = os.getenv('id')    #Enter your User ID
 client = TelegramClient('tele', api_id, api_hash)
 client.start()
-@client.on(events.NewMessage(chats=os.getenv('Bansal'))) 
+@client.on(events.NewMessage(chats=os.getenv('Bansal'))) #Enter the phone number or username of your contact
 
 async def my_event_handler(event):
     message = event.message.message
-    dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
+    dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}    #You can create a dictionary of messages to automate your conversations
     if event.message.from_id.user_id != id:
         time.sleep(5)               #Delays response time of bot to make conversations more natural
         for x in list_bhati:
@@ -40,7 +40,7 @@ async def my_event_handler(event):
             if message.lower() == item:
                 await event.respond(dicta[item])
 
-@client.on(events.NewMessage(chats=os.getenv('Saumil'))) 
+@client.on(events.NewMessage(chats=os.getenv('Saumil'))) #Use the program to automate conversations for multiple contacts
 
 async def my_event_handler(event):
     message = event.message.message
