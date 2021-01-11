@@ -16,7 +16,7 @@ list_bhati = ['bhati op', 'machaya bhati']
 greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya']      #Create a list of greeting messages you usually receive and wish to send to others as greetings
 api_id = os.getenv('API_ID')    #Enter your Telegram app API ID
 api_hash = os.getenv('API_HASH')  # Enter the created API Hash 
-id = os.getenv('id')    #Enter your User ID
+use_id = os.getenv('ID')    #Enter your User ID
 client = TelegramClient('tele', api_id, api_hash)
 client.start()
 @client.on(events.NewMessage(chats=os.getenv('Bansal'))) #Enter the phone number or username of your contact
@@ -24,7 +24,8 @@ client.start()
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}    #You can create a dictionary of messages to automate your conversations
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
+        print(use_id)  
         time.sleep(5)               #Delays response time of bot to make conversations more natural
         for x in list_bhati:
             if x == event.text.lower():
@@ -45,7 +46,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dictb = {'sun' : 'bol', 'oye': 'bol','aur bta' : 'wahi same bhai. tu bta'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -63,7 +64,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dictb = {'sun' : 'bol', 'oye': 'bol', 'kya kar raha hai': 'kuch nahi. bata'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -99,7 +100,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -120,7 +121,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -141,7 +142,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -162,7 +163,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -183,7 +184,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
@@ -204,7 +205,7 @@ async def my_event_handler(event):
 async def my_event_handler(event):
     message = event.message.message
     dicta = {'aur bta' : 'wahi same bro. tu bta', 'oye': 'bol'}
-    if event.message.from_id.user_id != id:
+    if event.message.from_id.user_id != use_id:
         time.sleep(5)
         for x in list_bhati:
             if x == event.text.lower():
