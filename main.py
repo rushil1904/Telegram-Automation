@@ -23,7 +23,7 @@ client.start()
 
 async def my_event_handler(event):
     message = event.message.message
-    dicta = {'aur bta' : 'wahi same bhai. tu bta', 'oye': 'bol'}    #You can create a dictionary of messages to automate your conversations
+    dicta = {'aur bta bro' : 'wahi same bhai. tu bta', 'oye': 'bol'}    #You can create a dictionary of messages to automate your conversations
     if event.message.from_id.user_id != use_id:
         print(use_id)  
         time.sleep(5)               #Delays response time of bot to make conversations more natural
