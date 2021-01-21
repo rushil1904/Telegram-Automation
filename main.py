@@ -13,7 +13,7 @@ except:
     from telethon import functions,types
 
 list_bhati = ['bhati op', 'machaya bhati']
-greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya']      #Create a list of greeting messages you usually receive and wish to send to others as greetings
+greetings = ['hi', 'hey', 'hello','hi!', 'hey!', 'hello!', 'heya','sup']      #Create a list of greeting messages you usually receive and wish to send to others as greetings
 api_id = os.getenv('API_ID')    #Enter your Telegram app API ID
 api_hash = os.getenv('API_HASH')  # Enter the created API Hash 
 use_id = os.getenv('ID')    #Enter your User ID
