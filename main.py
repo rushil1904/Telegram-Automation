@@ -199,7 +199,7 @@ async def my_event_handler(event):
             if message.lower() == item:
                 await event.respond(dicta[item])
 
-@client.on(events.NewMessage(chats=os.getenv('Shruti'))) #Shruti
+@client.on(events.NewMessage(chats=os.getenv('Shruti'))) 
 
 async def my_event_handler(event):
     message = event.message.message
