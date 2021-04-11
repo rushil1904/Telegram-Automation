@@ -64,7 +64,7 @@ async def my_event_handler(event):
     message = event.message.message
     dictb = {'sun' : 'bol', 'oye': 'bol', 'kya kar raha hai': 'kuch nahi. bata'}
     if event.message.from_id.user_id != use_id:
-        time.sleep(5)
+        time.sleep(10)
         for x in list_bhati:
             if x == event.text.lower():
                 await event.reply('Bhati always OP!')
